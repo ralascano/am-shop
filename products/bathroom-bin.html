@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aesthetic Home Product Landing Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#66b814",
+              "background-light": "#f9f7f5", // As requested in description: #F9F7F5
+              "background-dark": "#192111",
+              "neutral-soft": "#e2e8da",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .review-card {
+        margin-top: 24px;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      }
+
+      .review-quote-icon {
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        font-size: 80px;
+        color: rgba(102, 184, 20, 0.05); /* El verde de tu marca con opacidad */
+        font-family: serif;
+        user-select: none;
+      }
+
+      .review-text {
+        font-size: 15px;
+        color: #4a5568;
+        line-height: 1.6;
+        font-style: italic;
+        position: relative;
+        margin: 0;
+      }
+
+      .review-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+
+      .stars {
+        color: #fbbf24;
+        display: flex;
+        gap: 2px;
+      }
+
+      .verified-tag {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        color: #a0aec0;
+      }
+
+      .customer-badge {
+        font-size: 11px;
+        font-weight: 500;
+        color: #66b814;
+        background-color: rgba(102, 184, 20, 0.08);
+        padding: 4px 8px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+    <link rel="icon" type="image/png" href="../assets/favicon.ico" />
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 min-h-screen flex flex-col font-display"
+  >
+    <header
+      class="w-full border-b border-slate-200/60 bg-white/70 backdrop-blur-md"
+    >
+      <div
+        class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a href="../index.html" class="flex items-center space-x-2">
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm"
+          >
+            <img
+              alt="Ceramic Ribbed Vase"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="eramic Ribbed Vas"
+              src="../assets/logo.png"
+            />
+          </div>
+          <span class="text-sm font-semibold tracking-wide text-slate-900">
+            Curated Habitat
+          </span>
+        </a>
+
+        <span class="text-xs text-slate-400 tracking-wide hidden sm:block">
+          Thoughtfully selected home essentials
+        </span>
+      </div>
+    </header>
+
+    <!-- Header Navigation -->
+    <nav class="max-w-[900px] mx-auto w-full px-6 pt-12 pb-8 flex items-center">
+      <a
+        class="group flex items-center text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-primary transition-colors"
+        href="../index.html"
+      >
+        <span
+          class="material-icons text-lg mr-2 transition-transform group-hover:-translate-x-1"
+          >arrow_back</span
+        >
+        Back to all finds
+      </a>
+    </nav>
+    <!-- Main Content Container -->
+    <main class="flex-grow flex items-center justify-center px-6 pb-8">
+      <div
+        class="max-w-[900px] w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Product Image Section (Left) -->
+        <div class="relative group">
+          <div
+            class="absolute -inset-4 bg-primary/5 rounded-xl blur-2xl opacity-50"
+          ></div>
+          <div
+            class="relative overflow-hidden rounded-lg shadow-xl shadow-slate-200 dark:shadow-none bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700"
+          >
+            <img
+              alt="Minimalist Aesthetic Home Product"
+              class="w-full h-auto aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700"
+              data-alt="Minimalist sleek white ceramic diffuser on wooden table"
+              src="../assets/garbagecan/image_2.png"
+            />
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 text-[10px] uppercase tracking-widest font-bold px-3 py-1.5 rounded-full text-primary border border-primary/20 shadow-sm"
+              >
+                Curated Choice
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Content Section (Right) -->
+        <div class="flex flex-col space-y-8">
+          <div class="space-y-4">
+            <span
+              class="inline-block text-xs font-semibold tracking-widest text-primary/80 uppercase"
+              >Interior Essentials</span
+            >
+            <h1
+              class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white leading-[1.1] tracking-tight"
+            >
+              YourCasa: The Ultimate Minimalist Bin for Modern Bathrooms
+            </h1>
+            <p
+              class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              Upgrade your bathroom with a piece that blends Swiss-inspired
+              design with daily functionality. This 5-liter bin features a
+              high-quality ABS body that is completely rust and mold-proof,
+              unlike traditional metal bins. Its soft-close lid ensures a silent
+              experience, while the anti-slip base keeps it perfectly in place
+              on any surface.
+            </p>
+          </div>
+          <!-- Features List -->
+          <ul class="space-y-3">
+            <li
+              class="flex items-start text-sm text-slate-500 dark:text-slate-400"
+            >
+              <span class="material-icons text-primary mr-3 text-lg"
+                >check_circle</span
+              >
+              Odor-Proof Design: Precision-fitted lid that traps smells inside.
+            </li>
+            <li
+              class="flex items-start text-sm text-slate-500 dark:text-slate-400"
+            >
+              <span class="material-icons text-primary mr-3 text-lg"
+                >check_circle</span
+              >
+              Soft-Close Technology: Silent and smooth closing mechanism.
+            </li>
+            <li
+              class="flex items-start text-sm text-slate-500 dark:text-slate-400"
+            >
+              <span class="material-icons text-primary mr-3 text-lg"
+                >check_circle</span
+              >
+              Easy Cleaning: Includes a removable inner bucket with a handle.
+            </li>
+            <li
+              class="flex items-start text-sm text-slate-500 dark:text-slate-400"
+            >
+              <span class="material-icons text-primary mr-3 text-lg"
+                >check_circle</span
+              >
+
+              Premium Material: Durable ABS plastic with a sophisticated matte
+              beige finish.
+            </li>
+          </ul>
+          <!-- People Say -->
+          <div class="review-card">
+            <span class="review-quote-icon">“</span>
+
+            <div style="position: relative">
+              <p class="review-text">
+                Based on customer feedback: "Perfect size for small bathrooms
+                and much quieter than metal bins. It looks incredibly high-end
+                and the soft-close actually works!"
+              </p>
+
+              <div class="review-footer">
+                <div style="display: flex; align-items: center; gap: 8px">
+                  <div class="stars">
+                    <span class="material-icons" style="font-size: 14px"
+                      >star</span
+                    >
+                    <span class="material-icons" style="font-size: 14px"
+                      >star</span
+                    >
+                    <span class="material-icons" style="font-size: 14px"
+                      >star</span
+                    >
+                    <span class="material-icons" style="font-size: 14px"
+                      >star</span
+                    >
+                    <span class="material-icons" style="font-size: 14px"
+                      >star</span
+                    >
+                  </div>
+                  <span class="verified-tag">Verified Purchase</span>
+                </div>
+
+                <div class="customer-badge">
+                  <span
+                    class="material-icons"
+                    style="font-size: 12px; margin-right: 4px"
+                    >person</span
+                  >
+                  Real Customer
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CTA Section -->
+          <div class="pt-4 space-y-4">
+            <a
+              class="inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 px-8 rounded-lg shadow-lg shadow-primary/25 transition-all active:scale-[0.98]"
+              target="_blank"
+              href="https://amzn.to/4a6uk6r"
+            >
+              Check Price on Amazon
+              <span class="material-icons ml-2">open_in_new</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Disclaimer -->
+    <footer
+      class="mt-auto border-t border-slate-200/60 bg-white/70 backdrop-blur-sm"
+    >
+      <div class="max-w-5xl mx-auto px-6 py-10 text-center space-y-6">
+        <!-- Mini brand -->
+        <div class="flex flex-col items-center space-y-2">
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
+          >
+            <img
+              alt="Curated Habitat logo"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="Minimalist white ceramic ribbed vase on table"
+              src="../assets/logo.png"
+            />
+          </div>
+          <span class="text-sm font-semibold tracking-wide text-slate-800">
+            Curated Habitat
+          </span>
+        </div>
+
+        <!-- Disclosure -->
+        <p class="text-[11px] text-slate-400 max-w-xl mx-auto leading-relaxed">
+          As an Amazon Associate, Curated Habitat earns from qualifying
+          purchases. Prices and availability are accurate at the time of posting
+          and may change.
+        </p>
+
+        <!-- Links -->
+        <div class="flex justify-center space-x-6 text-slate-400 text-sm">
+          <a href="/about.html" class="hover:text-primary transition-colors"
+            >About</a
+          >
+          <a href="/contact.html" class="hover:text-primary transition-colors"
+            >Contact</a
+          >
+          <a href="/privacy.html" class="hover:text-primary transition-colors"
+            >Privacy</a
+          >
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-[10px] uppercase tracking-widest text-slate-300">
+          © 2024 Curated Habitat. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

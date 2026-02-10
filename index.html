@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Curated Home Essentials Index</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1754cf",
+              "background-light": "#f6f6f8",
+              "background-dark": "#111621",
+              "warm-neutral": "#F9F7F5",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #f9f7f5;
+      }
+    </style>
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+  </head>
+  <body
+    class="font-display text-slate-800 antialiased min-h-screen flex flex-col"
+  >
+    <!-- Header Section -->
+    <header
+      class="w-full h-20 border-b border-slate-200/60 bg-white/70 backdrop-blur-md"
+    >
+      <div
+        class="max-w-5xl h-full mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center space-x-2">
+          <div
+            class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm"
+          >
+            <img
+              alt="Curated Habitat logo"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="Minimalist white ceramic ribbed vase on table"
+              src="assets/logo.png"
+            />
+          </div>
+          <span class="text-sm font-semibold tracking-wide text-slate-900">
+            Curated Habitat
+          </span>
+        </a>
+
+        <span class="text-xs text-slate-400 tracking-wide hidden sm:block">
+          Thoughtfully selected home essentials
+        </span>
+      </div>
+    </header>
+
+    <!-- Main Content: Mobile-first centered column -->
+    <main class="flex-grow w-full max-w-2xl mx-auto px-4 pb-20">
+      <div class="space-y-4">
+        <!-- Product Card 1 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-100 p-4 flex items-center group hover:shadow-md transition-shadow duration-300"
+        >
+          <div
+            class="w-24 h-24 flex-shrink-0 bg-slate-50 rounded-lg overflow-hidden border border-slate-100"
+          >
+            <img
+              alt="Ceramic Ribbed Vase"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="Minimalist white ceramic ribbed vase on table"
+              src="assets/garbagecan/garbage_can.jpg"
+            />
+          </div>
+          <div class="ml-5 flex-grow flex justify-between items-center">
+            <div class="pr-4">
+              <h3 class="text-lg font-medium text-slate-900 mb-1">
+                YourCasa Minimalist 5L Bin
+              </h3>
+              <p class="text-sm text-slate-500 line-clamp-1">
+                Matte finish & soft-close technology.
+              </p>
+            </div>
+            <a
+              class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+              href="products/bathroom-bin.html"
+            >
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination/Load More (Subtle) -->
+      <!--<div class="mt-12 flex justify-center">
+        <button
+          class="flex items-center space-x-2 text-slate-400 hover:text-primary transition-colors duration-200 text-sm font-medium tracking-wide"
+        >
+          <span>View More Items</span>
+          <span class="material-icons text-base">expand_more</span>
+        </button>
+      </div>-->
+    </main>
+    <!-- Footer -->
+    <footer
+      class="mt-auto border-t border-slate-200/60 bg-white/70 backdrop-blur-sm"
+    >
+      <div class="max-w-5xl mx-auto px-6 py-10 text-center space-y-6">
+        <!-- Mini brand -->
+        <div class="flex flex-col items-center space-y-2">
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
+          >
+            <img
+              alt="Ceramic Ribbed Vase"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="Minimalist white ceramic ribbed vase on table"
+              src="assets/logo.png"
+            />
+          </div>
+          <span class="text-sm font-semibold tracking-wide text-slate-800">
+            Curated Habitat
+          </span>
+        </div>
+
+        <!-- Disclosure -->
+        <p class="text-[11px] text-slate-400 max-w-xl mx-auto leading-relaxed">
+          As an Amazon Associate, Curated Habitat earns from qualifying
+          purchases. Prices and availability are accurate at the time of posting
+          and may change.
+        </p>
+
+        <!-- Links -->
+        <div class="flex justify-center space-x-6 text-slate-400 text-sm">
+          <a href="/about.html" class="hover:text-primary transition-colors"
+            >About</a
+          >
+          <a href="/contact.html" class="hover:text-primary transition-colors"
+            >Contact</a
+          >
+          <a href="/privacy.html" class="hover:text-primary transition-colors"
+            >Privacy</a
+          >
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-[10px] uppercase tracking-widest text-slate-300">
+          © 2024 Curated Habitat. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
